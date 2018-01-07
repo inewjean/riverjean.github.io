@@ -281,7 +281,7 @@
 
     
         <!-- 来必力City版安装代码 -->
-<div id="lv-container" data-id="city" data-uid="MTAyMC8zMjM4MC84OTQx" style="margin:0 20px; background:rgb(255,255,255)">
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zMjM4MC84OTQx" style="margin:0 10px; padding:0 15px; border-radius: 10px; background:rgb(255,255,255)">
 <script type="text/javascript">
    (function(d, s) {
        var j, e = d.getElementsByTagName(s)[0];
@@ -374,32 +374,6 @@
 </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
-
-  <script language="javascript">
-    $(function() {
-        $("a[title]").each(function() {
-            var a = $(this);
-            var title = a.attr('title');
-            if (title == undefined || title == "") return;
-            a.data('title', title).removeAttr('title').hover(
-
-            function() {
-                var offset = a.offset();
-                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
-                    top: offset.top - a.outerHeight() - 15,
-                    left: offset.left + a.outerWidth()/2 + 1
-                }).fadeIn(function() {
-                    var pop = $(this);
-                    setTimeout(function() {
-                        pop.remove();
-                    }, pop.text().length * 800);
-                });
-            }, function() {
-                $("#anchortitlecontainer").remove();
-            });
-        });
-    });
 </script>
 
 
